@@ -15,3 +15,4 @@ const Genre = conn.model("Genre", genreSchema);
 
 module.exports.Genre = Genre;
 module.exports.schema = schema;
+module.exports.genreSchema = genreSchema;
