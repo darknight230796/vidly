@@ -21,11 +21,13 @@ const port = process.env.PORT || 3000;
 const generesRouter = require("./router/genres");
 const customerRouter = require("./router/customers");
 const movieRouter = require("./router/movies");
+const rentalRouter = require("./router/rentals");
 app.use(express.json());
 app.use("/", homeRouter);
 app.use("/api/genres", generesRouter);
 app.use("/api/customers", customerRouter);
 app.use("/api/movies", movieRouter);
+app.use("/api/rentals",rentalRouter);
 app.listen(port, () => {
   console.log(`Server running on ${port}`);
 });

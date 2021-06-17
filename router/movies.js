@@ -14,13 +14,15 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   if (!schema.validate(req.body).error) {
-    let movie = new Movie();
+    let movie = new Movie({
+      ...req.body,
+    });
     //movie = { ...req.body };
-    movie.title = req.body.title;
-    movie.numberInStock = req.body.numberInStock;
-    movie.dailyRentalRate = req.body.dailyRentalRate;
-    movie.genre = req.body.genre;
-    
+    // movie.title = req.body.title;
+    // movie.numberInStock = req.body.numberInStock;
+    // movie.dailyRentalRate = req.body.dailyRentalRate;
+    // movie.genre = req.body.genre;
+
     let result = await movie.save();
     res.send(result);
   } else {
