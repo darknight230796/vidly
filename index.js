@@ -9,7 +9,7 @@ const conn = mongoose.createConnection("mongodb://localhost/vidly", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 const autoIncrement = require("mongoose-auto-increment");
 autoIncrement.initialize(conn);
@@ -22,12 +22,16 @@ const generesRouter = require("./router/genres");
 const customerRouter = require("./router/customers");
 const movieRouter = require("./router/movies");
 const rentalRouter = require("./router/rentals");
+const userRouter = require("./router/users");
+const authRouter = require("./router/auth");
 app.use(express.json());
 app.use("/", homeRouter);
 app.use("/api/genres", generesRouter);
 app.use("/api/customers", customerRouter);
 app.use("/api/movies", movieRouter);
-app.use("/api/rentals",rentalRouter);
+app.use("/api/rentals", rentalRouter);
+app.use("/api/users", userRouter);
+app.use("/api/auth", authRouter);
 app.listen(port, () => {
   console.log(`Server running on ${port}`);
 });
