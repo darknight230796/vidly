@@ -15,3 +15,85 @@
 {"message":"Server running on 5000","level":"info"}
 {"message":"Connected to database","level":"info"}
 {"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Connected to database","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"stringValue":"\"60ce3de8da3c7a342c413bfa\"","kind":"Number","value":"60ce3de8da3c7a342c413bfa","path":"_id","reason":{"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"valueType":"string","level":"error","message":"Cast to Number failed for value \"60ce3de8da3c7a342c413bfa\" (type string) at path \"_id\" for model \"Genre\" Cast to Number failed for value \"60ce3de8da3c7a342c413bfa\" (type string) at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to Number failed for value \"60ce3de8da3c7a342c413bfa\" (type string) at path \"_id\" for model \"Genre\"\n    at model.Query.exec (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4478:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4572:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"stringValue":"\"60ce3dfd1d67e331380bea29\"","kind":"Number","value":"60ce3dfd1d67e331380bea29","path":"_id","reason":{"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"valueType":"string","level":"error","message":"Cast to Number failed for value \"60ce3dfd1d67e331380bea29\" (type string) at path \"_id\" for model \"Genre\" Cast to Number failed for value \"60ce3dfd1d67e331380bea29\" (type string) at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to Number failed for value \"60ce3dfd1d67e331380bea29\" (type string) at path \"_id\" for model \"Genre\"\n    at model.Query.exec (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4478:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4572:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"stringValue":"\"60ce3f4da3662a2eb06d9c8e\"","kind":"Number","value":"60ce3f4da3662a2eb06d9c8e","path":"_id","reason":{"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"valueType":"string","level":"error","message":"Cast to Number failed for value \"60ce3f4da3662a2eb06d9c8e\" (type string) at path \"_id\" for model \"Genre\" Cast to Number failed for value \"60ce3f4da3662a2eb06d9c8e\" (type string) at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to Number failed for value \"60ce3f4da3662a2eb06d9c8e\" (type string) at path \"_id\" for model \"Genre\"\n    at model.Query.exec (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4478:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4572:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"stringValue":"\"60ce403330d61d2dc0d7a0c6\"","kind":"Number","value":"60ce403330d61d2dc0d7a0c6","path":"_id","reason":{"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"valueType":"string","level":"error","message":"Cast to Number failed for value \"60ce403330d61d2dc0d7a0c6\" (type string) at path \"_id\" for model \"Genre\" Cast to Number failed for value \"60ce403330d61d2dc0d7a0c6\" (type string) at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to Number failed for value \"60ce403330d61d2dc0d7a0c6\" (type string) at path \"_id\" for model \"Genre\"\n    at model.Query.exec (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4478:21)\n    at model.Query.Object.<anonymous>.Query.then (C:\\Users\\Rachit\\Desktop\\node tuts\\vidly\\node_modules\\mongoose\\lib\\query.js:4572:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}
+{"message":"Connected to database mongodb://localhost/vidly_tests","level":"info"}
+{"message":"Server running on 5000","level":"info"}

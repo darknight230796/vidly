@@ -1,13 +1,16 @@
 const express = require("express");
+const Mongoose = require("mongoose");
 const admin = require("../middleware/admin");
 const auth = require("../middleware/auth");
 const { Genre, schema } = require("../models/genre");
 const router = express.Router();
-router.get("/",async (req, res) => {
+router.get("/", async (req, res) => {
   return res.send(await Genre.find());
 });
 
 router.get("/:id", async (req, res) => {
+  // if (typeof(req.params.id)!=="number")
+  //   return res.status(404).send(`Invalid ID ${req.params.id} format`);
   let genre = await Genre.findById(req.params.id);
   if (!genre) return res.status(404).send(`ID: ${req.params.id} not found`);
   res.send(genre);
@@ -24,7 +27,7 @@ router.post("/", auth, async (req, res) => {
   }
 });
 
-router.put("/:id",auth, async (req, res) => {
+router.put("/:id", auth, async (req, res) => {
   if (schema.validate(req.body).error)
     return res
       .status(400)
@@ -38,7 +41,7 @@ router.put("/:id",auth, async (req, res) => {
   res.send(genre);
 });
 
-router.delete("/:id",[auth,admin], async (req, res) => {
+router.delete("/:id", [auth, admin], async (req, res) => {
   let result = await Genre.findByIdAndDelete(req.params.id);
 
   if (!result) return res.status(404).send(`ID: ${req.params.id} not found`);
