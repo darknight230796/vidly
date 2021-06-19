@@ -3,8 +3,7 @@ const admin = require("../middleware/admin");
 const auth = require("../middleware/auth");
 const { Genre, schema } = require("../models/genre");
 const router = express.Router();
-
-router.get("/", async (req, res) => {
+router.get("/",async (req, res) => {
   return res.send(await Genre.find());
 });
 
