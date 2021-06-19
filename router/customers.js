@@ -1,4 +1,5 @@
 const express = require("express");
+const auth = require("../middleware/auth");
 const { Customer, schema } = require("../models/customer");
 const router = express.Router();
 
@@ -12,7 +13,7 @@ router.get("/:id", async (req, res) => {
   res.send(customer);
 });
 
-router.post("/", async (req, res) => {
+router.post("/",auth, async (req, res) => {
   if (!schema.validate(req.body).error) {
     let customer = new Customer();
 
@@ -27,7 +28,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id",auth, async (req, res) => {
   if (schema.validate(req.body).error)
     return res
       .status(400)
@@ -41,7 +42,7 @@ router.put("/:id", async (req, res) => {
   res.send(customer);
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",auth, async (req, res) => {
   let result = await Customer.findByIdAndDelete(req.params.id);
 
   if (!result) return res.status(404).send(`ID: ${req.params.id} not found`);

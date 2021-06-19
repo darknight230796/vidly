@@ -1,4 +1,5 @@
 const express = require("express");
+const auth = require("../middleware/auth");
 const { Customer } = require("../models/customer");
 const { Movie } = require("../models/movie");
 const { Rental, schema } = require("../models/rental");
@@ -14,7 +15,7 @@ router.get("/:id", async (req, res) => {
   res.send(rental);
 });
 
-router.post("/", async (req, res) => {
+router.post("/",auth, async (req, res) => {
   if (schema.validate(req.body).error)
     return res
       .status(400)
@@ -45,7 +46,7 @@ router.post("/", async (req, res) => {
   return res.send(await rental.save());
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", auth,async (req, res) => {
   if (schema.validate(req.body).error)
     return res
       .status(400)
@@ -80,11 +81,11 @@ router.put("/:id", async (req, res) => {
   return res.send(result);
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", auth,async (req, res) => {
   return res.send(await Rental.findByIdAndDelete(req.params.id));
 });
 
-router.post("/:id", async(req,res)=>{
+router.post("/:id", auth,async(req,res)=>{
     return res.send(await Rental.findByIdAndUpdate(req.params.id,{
         dateReturn: Date.now()
     }));

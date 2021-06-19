@@ -1,4 +1,5 @@
 const express = require("express");
+const auth = require("../middleware/auth");
 const { Movie, schema } = require("../models/movie");
 const router = express.Router();
 
@@ -12,16 +13,11 @@ router.get("/:id", async (req, res) => {
   res.send(movie);
 });
 
-router.post("/", async (req, res) => {
+router.post("/", auth,async (req, res) => {
   if (!schema.validate(req.body).error) {
     let movie = new Movie({
       ...req.body,
     });
-    //movie = { ...req.body };
-    // movie.title = req.body.title;
-    // movie.numberInStock = req.body.numberInStock;
-    // movie.dailyRentalRate = req.body.dailyRentalRate;
-    // movie.genre = req.body.genre;
 
     let result = await movie.save();
     res.send(result);
@@ -30,7 +26,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id",auth, async (req, res) => {
   if (schema.validate(req.body).error)
     return res
       .status(400)
@@ -44,7 +40,7 @@ router.put("/:id", async (req, res) => {
   res.send(movie);
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id",auth, async (req, res) => {
   let result = await Movie.findByIdAndDelete(req.params.id);
 
   if (!result) return res.status(404).send(`ID: ${req.params.id} not found`);
