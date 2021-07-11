@@ -11,7 +11,7 @@ require('./startup/routers')(app);
 require('./startup/config')();
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => {
+const server = app.listen(port, () => {
   winston.info(`Server running on ${port}`);
 });
-//test
+module.exports.server = server;
